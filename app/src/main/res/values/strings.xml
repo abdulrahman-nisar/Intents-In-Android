@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Intents-In-Android</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="implicit_intent">Implicit Intent</string>
 </resources>
