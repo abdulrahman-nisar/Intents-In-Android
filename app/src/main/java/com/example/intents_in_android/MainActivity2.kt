@@ -22,7 +22,12 @@ class MainActivity2 : AppCompatActivity() {
         val age = intent.getIntExtra("age", 0)
         val textViewName = findViewById<TextView>(R.id.name)
         val textViewAge = findViewById<TextView>(R.id.age)
+        val backButton = findViewById<TextView>(R.id.back_button)
         textViewName.text = name
         textViewAge.text = age.toString()
+
+        backButton.setOnClickListener {
+            finish()
+        }
     }
 }
