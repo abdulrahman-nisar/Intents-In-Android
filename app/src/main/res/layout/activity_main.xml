@@ -13,8 +13,15 @@
         android:layout_width="wrap_content"
        android:layout_margin="10dp"
         android:layout_height="wrap_content"
-        android:id="@+id/explicit_intent"
-        android:text="@string/explicit_intent"/>
+        android:id="@+id/explicit_intent_bundle"
+        android:text="@string/explicit_intent_with_bundle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/explicit_intent_extras"
+        android:text="@string/explicit_intent_with_extras"/>
 
     <Button
         android:id="@+id/implicit_intent"
