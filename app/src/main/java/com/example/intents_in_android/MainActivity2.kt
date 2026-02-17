@@ -1,6 +1,7 @@
 package com.example.intents_in_android
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,12 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val name = intent.getStringExtra("name")
+        val age = intent.getIntExtra("age", 0)
+        val textViewName = findViewById<TextView>(R.id.name)
+        val textViewAge = findViewById<TextView>(R.id.age)
+        textViewName.text = name
+        textViewAge.text = age.toString()
     }
 }
